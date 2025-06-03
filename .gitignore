@@ -1,52 +1,56 @@
-# Prerequisites
-*.d
+## Compilação
+bin/
+obj/
+[Ll]og/
+*.log
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+## Arquivos de build do Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Linker output
-*.ilk
-*.map
-*.exp
+## Diretórios do Visual Studio
+.vs/
+.vscode/
 
-# Precompiled Headers
-*.gch
-*.pch
+## Pacotes
+*.nupkg
+packages/
+*.snupkg
+.nuget/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+## Arquivos temporários
+*.tmp
+*.temp
+*.bak
+*.old
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+## Arquivos de publicação
+publish/
+out/
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+## Arquivos do sistema
+Thumbs.db
+Desktop.ini
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
+## Configurações de ambiente
+*.env
+*.local.settings.json
+
+## Testes
+TestResults/
+*.coverage
+*.coveragexml
+*.testresults
+
+## Cache do Rider
+.idea/
+*.sln.iml
+
+## Outros
+*.dbmdl
 *.pdb
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+## Azure Functions (se aplicável)
+local.settings.json
