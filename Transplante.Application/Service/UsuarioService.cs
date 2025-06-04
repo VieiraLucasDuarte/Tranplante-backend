@@ -5,7 +5,7 @@ namespace Transplante.Application.Service
 {
     public class UsuarioService : IUsuarioFacade
     {
-        public bool ValidarLogin(LoginDTO login)
+        public bool ValidarLogin()
         {
             return true;
         }

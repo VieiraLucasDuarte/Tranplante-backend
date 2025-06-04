@@ -4,6 +4,7 @@ using Transplante.Application.Facade;
 
 namespace Transplante.API.Controllers
 {
+    [Route("[controller]")]
     public class UsuarioController : ControllerBase
     {
         private IUsuarioFacade IUsuarioFacade;
@@ -13,8 +14,8 @@ namespace Transplante.API.Controllers
         }
 
         [HttpPost("login")]
-        public bool ValidaLogin([FromBodyAttribute] LoginDTO request)
-            => IUsuarioFacade.ValidarLogin(request);
+        public bool ValidaLogin()
+            => IUsuarioFacade.ValidarLogin();
 
     }
 }
