@@ -4,6 +4,6 @@ namespace Transplante.Application.Facade
 {
     public interface IUsuarioFacade
     {
-        bool ValidarLogin();
+        bool ValidarLogin(LoginDTO dto);
     }
 }

@@ -14,8 +14,8 @@ namespace Transplante.API.Controllers
         }
 
         [HttpPost("login")]
-        public bool ValidaLogin()
-            => IUsuarioFacade.ValidarLogin();
+        public bool ValidaLogin([FromBody]LoginDTO dto)
+            => IUsuarioFacade.ValidarLogin(dto);
 
     }
 }
