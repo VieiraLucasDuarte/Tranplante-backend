@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Transplante.Domain\Transplante.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
