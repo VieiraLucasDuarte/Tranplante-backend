@@ -5,12 +5,10 @@ using Transplante.Domain.Entities;
 
 namespace Transplante.API.Controllers
 {
-    [ApiController]
     [Route("[controller]")]
     public class DadosVitaisController : ControllerBase
     {
         private IDadosVitaisFacade IDadosFacade;
-
         public DadosVitaisController(IDadosVitaisFacade iDadosFacade)
         {
             IDadosFacade = iDadosFacade;
